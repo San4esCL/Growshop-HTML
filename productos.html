@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Semillas HxC</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <link rel="stylesheet" type="text/css" href="css/cssFooter.css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/codigo.js"></script>
+  <script>  $(document).ready(function () { random(); cargarMonedas(); });</script>
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="container-fluid">
+    <header class="card-header row shadow">
+      <div class="col-md-4 col-sm-2">
+        <a href="indexx.html"><img src="img/delaferia.png" class="delaferia" alt=""></a>
+      </div>
+      <nav class="col-md-7 col-sm-12 navbar-expand p-3">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-top: 0.5cm;">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tienda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Más
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="productos.html">Productos</a>
+                <a class="dropdown-item" href="#">Semillas</a>
+                <a class="dropdown-item" href="#">Parafernalia</a>
+                <a class="dropdown-item" href="#">Indoor</a>
+            </li>
+            <input class="form-control mr-1" type="search" placeholder="EJ Semilla Mobydick" aria-label="Search">
+            <button class="btn btn-dark" type="submit">Buscar</button>
+            <li class="nav-item">
+              <a href="login.html"><img class="casatam ml-5" src="img/user.png" alt=""></a>
+            </li>
+            <li class="nav-item">
+              <a href=""><img class="casatam ml-5" src="img/carrito.png" alt=""></a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    </header>
+  </div>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-xl-2">
+        filtro
+      </div>
+      <div class="col-xl-10">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="card m-2">
+              <a href="" data-toggle="modal" data-target="#card1"><img src="img/tricomas2.jpg"
+                  class="card-size card-img-top img-fluid"></a>
+              <!-- modal -->
+              <div class="modal fade" id="card1" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <img src="img/tricomas2.jpg" class="img-fluid rounded img-modal">
+                </div>
+              </div>
+              <!-- fin modal -->
+              <div class="card-body line-top">
+                <h5 class="card-title">Mobydick</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe totam expedita unde.
+                </p>
+              </div>
+              <div class="line-top m-2">
+                <div class="row">
+                  <div class="col-xl-7">
+                    <h5><span id="CLP1"></span></h5>
+                    <h5><span id="USD1"></span></h5>
+                    <h5><span id="EUR1"></span></h5>
+                  </div>
+                  <div class="col-xl-5 d-flex justify-content-center align-items-center" style="padding:0px">
+                    <a href="#" class="btn btn-sm btn-primary float-right">Ver Más...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="card m-2">
+              <a href="" data-toggle="modal" data-target="#card2"><img src="img/seed1.jpg"
+                  class="card-size card-img-top img-fluid"></a>
+              <!-- modal -->
+              <div class="modal fade" id="card2" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <img src="img/seed1.jpg" class="img-fluid rounded img-modal">
+                </div>
+              </div>
+              <!-- fin modal -->
+              <div class="card-body line-top">
+                <h5 class="card-title">White Widow</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe totam expedita unde.
+                </p>
+              </div>
+              <div class="line-top m-2">
+                <div class="row">
+                  <div class="col-xl-7">
+                    <h5><span id="CLP2"></span></h5>
+                    <h5><span id="USD2"></span></h5>
+                    <h5><span id="EUR2"></span></h5>
+                  </div>
+                  <div class="col-xl-5 d-flex justify-content-center align-items-center" style="padding:0px">
+                    <a href="#" class="btn btn-sm btn-primary float-right">Ver Más...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="card m-2">
+              <a href="" data-toggle="modal" data-target="#card3"><img src="img/seed2.jpg"
+                  class="card-size card-img-top img-fluid"></a>
+              <!-- modal -->
+              <div class="modal fade" id="card3" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <img src="img/seed2.jpg" class="img-fluid rounded img-modal">
+                </div>
+              </div>
+              <!-- fin modal -->
+              <div class="card-body line-top">
+                <h5 class="card-title">24k Gold</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe totam expedita unde.
+                </p>
+              </div>
+              <div class="line-top m-2">
+                <div class="row">
+                  <div class="col-xl-7">
+                    <h5><span id="CLP3"></span></h5>
+                    <h5><span id="USD3"></span></h5>
+                    <h5><span id="EUR3"></span></h5>
+                  </div>
+                  <div class="col-xl-5 d-flex justify-content-center align-items-center" style="padding:0px">
+                    <a href="#" class="btn btn-sm btn-primary float-right">Ver Más...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="card m-2">
+              <a href="" data-toggle="modal" data-target="#card4"><img src="img/seed3.jpg"
+                  class="card-size card-img-top img-fluid"></a>
+              <!-- modal -->
+              <div class="modal fade" id="card4" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <img src="img/seed3.jpg" class="img-fluid rounded img-modal">
+                </div>
+              </div>
+              <!-- fin modal -->
+              <div class="card-body line-top">
+                <h5 class="card-title">AK 47</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe totam expedita unde.
+                </p>
+              </div>
+              <div class="line-top m-2">
+                <div class="row">
+                  <div class="col-xl-7">
+                    <h5><span id="CLP4"></span></h5>
+                    <h5><span id="USD4"></span></h5>
+                    <h5><span id="EUR4"></span></h5>
+                  </div>
+                  <div class="col-xl-5 d-flex justify-content-center align-items-center" style="padding:0px">
+                    <a href="#" class="btn btn-sm btn-primary float-right">Ver Más...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="card m-2">
+              <a href="" data-toggle="modal" data-target="#card5"><img src="img/seed4.jpg"
+                  class="card-size card-img-top img-fluid"></a>
+              <!-- modal -->
+              <div class="modal fade" id="card5" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <img src="img/seed4.jpg" class="img-fluid rounded img-modal">
+                </div>
+              </div>
+              <!-- fin modal -->
+              <div class="card-body line-top">
+                <h5 class="card-title">Amnesia CBD</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe totam expedita unde.
+                </p>
+              </div>
+              <div class="line-top m-2">
+                <div class="row">
+                  <div class="col-xl-7">
+                    <h5><span id="CLP5"></span></h5>
+                    <h5><span id="USD5"></span></h5>
+                    <h5><span id="EUR5"></span></h5>
+                  </div>
+                  <div class="col-xl-5 d-flex justify-content-center align-items-center" style="padding:0px">
+                    <a href="#" class="btn btn-sm btn-primary float-right">Ver Más...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="card m-2">
+              <a href="" data-toggle="modal" data-target="#card6"><img src="img/seed5.jpg"
+                  class="card-size card-img-top img-fluid"></a>
+              <!-- modal -->
+              <div class="modal fade" id="card6" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <img src="img/seed5.jpg" class="img-fluid rounded img-modal">
+                </div>
+              </div>
+              <!-- fin modal -->
+              <div class="card-body line-top">
+                <h5 class="card-title">Anubis</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe totam expedita unde.
+                </p>
+              </div>
+              <div class="line-top m-2">
+                <div class="row">
+                  <div class="col-xl-7">
+                    <h5><span id="CLP6"></span></h5>
+                    <h5><span id="USD6"></span></h5>
+                    <h5><span id="EUR6"></span></h5>
+                  </div>
+                  <div class="col-xl-5 d-flex justify-content-center align-items-center" style="padding:0px">
+                    <a href="#" class="btn btn-sm btn-primary float-right">Ver Más...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- row.// -->
+
+
+
+      </div>
+      <!--container.//-->
+
+
+    </div>
+  </div>
+  </div>
+  <!-- Footer -->
+  <div class="contariner-fluid" style="margin-top: 1.1cm;">
+    <footer>
+      <div class="row text-light mx-2 pt-2">
+        <div class="col-sm-4">
+          <h3 class="display-4">Servicios</h3>
+          <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto ducimus quasi quo accusantium,
+            est sunt officia iure eaque amet recusandae?</p>
+        </div>
+        <div class="col-sm-4">
+          <h3 class="display-4">Noticias</h3>
+          <ul>
+            <li class="lead"><a href="productos.html" style="color: white">Productos</a></li>
+            <li class="lead"><a href="#" style="color: white">Semillas</a></li>
+            <li class="lead"><a href="#" style="color: white">Parafernalia</a></li>
+            <li class="lead"><a href="#" style="color: white">Indoor</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h3 class="display-4">Contacto</h3>
+          <div class="d-flex">
+            <img src="img/house.svg" alt="" style="height: 30px">
+            <p class="lead ml-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, ullam!</p>
+          </div>
+          <div class="d-flex">
+            <img src="img/call-answer.svg" alt="" style="height: 30px;">
+            <p class="lead ml-2">+56 9 12345678</p>
+          </div>
+          <div class="d-flex mt-2">
+            <img src="img/email.svg" alt="" style="height: 30px;">
+            <p class="lead ml-2">Loremipsumdolor@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid copyright text-light d-flex justify-content-center align-items-center mt-3 pt-3">
+        <p class="lead">Todos los Derechos Reservados | Vicente | David | Leonel </p>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
